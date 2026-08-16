@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Shravan Kumar Cycle Store</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <header>
+        <div class="panel">
+            <div class="panel-menu">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+
+            <div class="scrolling-banner">
+                <div class="scrolling-track">
+                    <img src="beauty1.jpg" alt="Beauty">
+                    <img src="beauty2.jpg" alt="Beauty">
+                    <img src="beauty3.jpg" alt="Beauty">
+                    <img src="beauty4.jpg" alt="Beauty">
+
+                    <img src="beauty1.jpg" alt="Beauty">
+                    <img src="beauty2.jpg" alt="Beauty">
+                    <img src="beauty3.jpg" alt="Beauty">
+                    <img src="beauty4.jpg" alt="Beauty">
+                </div>
+            </div>
+
+            <section class="gallery-section" id="gallery">
+                <div class="section-heading">
+                    <span>OUR WORK</span>
+                    <h2>Beauty <i>Gallery</i></h2>
+                    <p>A glimpse of our work, creativity and beautiful transformations.</p>
+                </div>
+
+                <div class="gallery-filters">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="makeup">Makeup</button>
+                    <button class="filter-btn" data-filter="hair">Hair</button>
+                    <button class="filter-btn" data-filter="bridal">Bridal</button>
+                    <button class="filter-btn" data-filter="nails">Nails</button>
+                </div>
+
+                <div class="gallery-grid">
+                    <div class="gallery-item makeup">
+                        <img src="makeup.jpg" alt="Makeup">
+                    </div>
+                    <div class="gallery-item hair">
+                        <img src="hair.jpg" alt="Hair Styling">
+                    </div>
+                    <div class="gallery-item bridal">
+                        <img src="bridal.jpg" alt="Bridal Makeup">
+                    </div>
+                    <div class="gallery-item nails">
+                        <img src="nail.jpg" alt="Nail Art">
+                    </div>
+                    <div class="gallery-item makeup">
+                        <img src="makeup2.jpg" alt="Makeup">
+                    </div>
+                    <div class="gallery-item hair">
+                        <img src="hair2.jpg" alt="Hair Styling">
+                    </div>
+                </div>
+            </section>
+
+            <div class="lightbox" id="lightbox">
+                <button class="lightbox-close">&times;</button>
+                <button class="lightbox-prev">&#10094;</button>
+                <img id="lightbox-img" src="" alt="Gallery Image">
+                <button class="lightbox-next">&#10095;</button>
+            </div>
+
+            <section class="reviews-section" id="reviews">
+                <div class="section-heading">
+                    <span>CLIENT LOVE</span>
+                    <h2>What Our <i>Clients Say</i></h2>
+                    <p>Real experiences from our beautiful clients.</p>
+                </div>
+
+                <div class="reviews-wrapper">
+                    <div class="reviews-track">
+                        <div class="review-card">
+                            <div class="review-stars">★★★★★</div>
+                            <p>"Absolutely loved the experience! The makeup was beautiful and the staff was extremely professional."</p>
+                            <div class="client">
+                                <img src="images/client1.jpg" alt="Client">
+                                <div>
+                                    <h4>Priya Sharma</h4>
+                                    <span>Bridal Makeup</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="review-card">
+                            <div class="review-stars">★★★★★</div>
+                            <p>"The salon has such a premium atmosphere. My haircut and styling turned out exactly how I wanted."</p>
+                            <div class="client">
+                                <img src="images/client2.jpg" alt="Client">
+                                <div>
+                                    <h4>Ananya Verma</h4>
+                                    <span>Hair Styling</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="review-card">
+                            <div class="review-stars">★★★★★</div>
+                            <p>"Wonderful service and very friendly staff. I will definitely come back again."</p>
+                            <div class="client">
+                                <img src="images/client3.jpg" alt="Client">
+                                <div>
+                                    <h4>Neha Singh</h4>
+                                    <span>Facial &amp; Skin Care</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="review-card">
+                            <div class="review-stars">★★★★★</div>
+                            <p>"One of the best beauty experiences I have ever had. Highly recommended!"</p>
+                            <div class="client">
+                                <img src="images/client4.jpg" alt="Client">
+                                <div>
+                                    <h4>Riya Gupta</h4>
+                                    <span>Makeup</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="review-dots">
+                    <button class="review-dot active"></button>
+                    <button class="review-dot"></button>
+                    <button class="review-dot"></button>
+                    <button class="review-dot"></button>
+                </div>
+
+                <button class="write-review" id="writeReviewBtn">Write a Review</button>
+            </section>
+
+            <footer class="makeup-footer">
+                <div class="footer-container">
+                    <div class="footer-brand">
+                        <img src="logo.jpg" alt="Makeup">
+                        <p>
+                            Beauty is not just about looking beautiful,
+                            it's about feeling confident in your own skin.
+                        </p>
+                        <a href="#booking" class="footer-book-btn">
+                            Book Appointment <span>→</span>
+                        </a>
+                    </div>
+
+                    <div class="footer-column">
+                        <h3>Quick Links</h3>
+                        <a href="#home">Home</a>
+                        <a href="#services">Services</a>
+                        <a href="#gallery">Gallery</a>
+                        <a href="#reviews">Reviews</a>
+                        <a href="#booking">Book Appointment</a>
+                    </div>
+
+                    <div class="footer-column">
+                        <h3>Our Services</h3>
+                        <a href="#services">Makeup</a>
+                        <a href="#services">Hair Styling</a>
+                        <a href="#services">Bridal Makeup</a>
+                        <a href="#services">Facial &amp; Skin Care</a>
+                        <a href="#services">Nail Care</a>
+                    </div>
+
+                    <div class="footer-column contact-column">
+                        <h3>Contact Us</h3>
+                        <a href="tel:+919876543210">
+                            <span class="contact-icon">☎</span>
+                            +91 98765 43210
+                        </a>
+                        <a href="mailto:hello@makeup.com">
+                            <span class="contact-icon">✉</span>
+                            hello@makeup.com
+                        </a>
+                        <p>
+                            <span class="contact-icon">⌖</span>
+                            Your Beauty Studio,<br>
+                            Main Market, Your City
+                        </p>
+                        <p>
+                            <span class="contact-icon">◷</span>
+                            Mon – Sun: 10:00 AM – 8:00 PM
+                        </p>
+                    </div>
+                </div>
+
+                <div class="footer-social-area">
+                    <div class="footer-social">
+                        <a href="https://www.instagram.com/ayushmaurya1212/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                            <i class="fa-brands fa-instagram"></i>
+                            <span>Instagram</span>
+                        </a>
+                        <a href="https://www.facebook.com/ayushmaurya1212" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                            <i class="fa-brands fa-facebook-f"></i>
+                            <span>Facebook</span>
+                        </a>
+                        <a href="https://www.youtube.com/@ayushmauryavlog11" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+                            <i class="fa-brands fa-youtube"></i>
+                            <span>YouTube</span>
+                        </a>
+                        <a href="https://wa.me/Mr.Bigg%20Boss" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+                            <i class="fa-brands fa-whatsapp"></i>
+                            <span>WhatsApp</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer-bottom">
+                    <p>© 2026 Makeup. All Rights Reserved.</p>
+                    <div>
+                        <a href="#">Privacy Policy</a>
+                        <span>•</span>
+                        <a href="#">Terms &amp; Conditions</a>
+                    </div>
+                </div>
+            </footer>
+
+            <script src="script.js"></script>
+
+            <div class="review-modal" id="reviewModal">
+                <div class="review-modal-box">
+                    <button class="review-close" id="closeReview">&times;</button>
+
+                    <div class="review-modal-heading">
+                        <span>SHARE YOUR EXPERIENCE</span>
+                        <h2>Write a <i>Review</i></h2>
+                        <p>We would love to hear about your experience.</p>
+                    </div>
+
+                    <form id="reviewForm">
+                        <input type="text" id="reviewName" placeholder="Your Name" required>
+
+                        <select id="reviewService" required>
+                            <option value="">Select Service</option>
+                            <option value="Makeup">Makeup</option>
+                            <option value="Bridal Makeup">Bridal Makeup</option>
+                            <option value="Hair Styling">Hair Styling</option>
+                            <option value="Facial &amp; Skin Care">Facial &amp; Skin Care</option>
+                            <option value="Nail Care">Nail Care</option>
+                        </select>
+
+                        <div class="rating-input">
+                            <span>Give Rating</span>
+                            <div class="stars">
+                                <button type="button" data-rating="1">★</button>
+                                <button type="button" data-rating="2">★</button>
+                                <button type="button" data-rating="3">★</button>
+                                <button type="button" data-rating="4">★</button>
+                                <button type="button" data-rating="5">★</button>
+                            </div>
+                        </div>
+
+                        <textarea id="reviewMessage" placeholder="Write your review..." maxlength="300" required></textarea>
+
+                        <button type="submit" class="submit-review">Submit Review</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </header>
+</body>
+</html>
